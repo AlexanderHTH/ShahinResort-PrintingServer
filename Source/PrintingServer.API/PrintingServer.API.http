@@ -1,0 +1,56 @@
+@PrintingServer.API_HostAddress = https://localhost:7272
+
+
+GET {{PrintingServer.API_HostAddress}}/api/Client/All
+
+###
+
+
+POST {{PrintingServer.API_HostAddress}}/api/Client/New
+Content-Type: application/json
+
+{
+  //CreateCommand
+}
+
+###
+
+
+GET {{PrintingServer.API_HostAddress}}/api/Client/8F855F5B-C34F-4F62-BCCA-18E01DF0B8CD
+
+###
+
+
+GET {{PrintingServer.API_HostAddress}}/api/Country/All
+
+###
+
+
+PATCH {{PrintingServer.API_HostAddress}}/api/Report/DeActivate/{id}
+Content-Type: application/json
+
+{
+  //Guid
+}
+
+###
+
+
+
+GET {{PrintingServer.API_HostAddress}}/api/Client/All
+
+###
+
+GET {{PrintingServer.API_HostAddress}}/api/Country/All
+
+###
+
+POST {{PrintingServer.API_HostAddress}}/api/UserManagment/Login
+Content-Type: application/json
+
+{
+  email : "manager@tqsystems.com",
+  password : "P@$$w0rd"
+}
+
+###
